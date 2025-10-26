@@ -3,32 +3,32 @@ import DisplayCards from "@/components/ui/display-cards";
 
 const features = [
   {
-    icon: <Radio className="size-4 text-cyan-300" />,
+    icon: <Radio className="size-4 text-white" />,
     title: "Mesh Network",
     description: "Offline connectivity",
-    iconClassName: "text-cyan-500",
-    titleClassName: "text-cyan-400",
+    iconClassName: "text-white",
+    titleClassName: "text-white",
   },
   {
-    icon: <Brain className="size-4 text-blue-300" />,
+    icon: <Brain className="size-4 text-white" />,
     title: "AI Routing",
     description: "Personalized paths",
-    iconClassName: "text-blue-500",
-    titleClassName: "text-blue-400",
+    iconClassName: "text-white",
+    titleClassName: "text-white",
   },
   {
-    icon: <Shield className="size-4 text-emerald-300" />,
+    icon: <Shield className="size-4 text-white" />,
     title: "Safety First",
     description: "Real-time alerts",
-    iconClassName: "text-emerald-500",
-    titleClassName: "text-emerald-400",
+    iconClassName: "text-white",
+    titleClassName: "text-white",
   },
 ];
 
 export function FeaturesSection() {
   return (
     <section className="py-20 lg:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/20 to-black" />
+      <div className="absolute inset-0 bg-black" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
@@ -93,10 +93,9 @@ export function FeaturesSection() {
 
 function FeatureCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="group relative p-6 rounded-2xl bg-neutral-900/50 border border-neutral-800 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10">
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    <div className="group relative p-6 rounded-2xl bg-neutral-900/50 border border-neutral-800 hover:border-white/50 transition-all duration-300">
       <div className="relative z-10">
-        <div className="text-cyan-400 mb-4">{icon}</div>
+        <div className="text-white mb-4">{icon}</div>
         <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
         <p className="text-neutral-400">{description}</p>
       </div>

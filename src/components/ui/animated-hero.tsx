@@ -38,7 +38,7 @@ function Hero() {
                 {titles.map((title, index) => (
                   <motion.span
                     key={index}
-                    className="absolute font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                    className="absolute font-semibold text-white"
                     initial={{ opacity: 0, y: "-100" }}
                     transition={{ type: "spring", stiffness: 50 }}
                     animate={
@@ -67,7 +67,7 @@ function Hero() {
             <Button size="lg" className="gap-4" variant="outline">
               Learn More <Shield className="w-4 h-4" />
             </Button>
-            <Button size="lg" className="gap-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700">
+            <Button size="lg" className="gap-4 bg-white text-black hover:bg-neutral-200">
               Get Started <MoveRight className="w-4 h-4" />
             </Button>
           </div>

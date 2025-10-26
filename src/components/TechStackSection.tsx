@@ -1,5 +1,4 @@
 import { LogoCloud } from "@/components/ui/logo-cloud";
-import { cn } from "@/lib/utils";
 
 const techLogos = [
   {
@@ -41,18 +40,14 @@ export default function TechStackSection() {
     <div className="min-h-[50vh] w-full flex items-center justify-center py-20 relative">
       <div
         aria-hidden="true"
-        className={cn(
-          "-z-10 -top-1/2 -translate-x-1/2 pointer-events-none absolute left-1/2 h-[120vmin] w-[120vmin] rounded-b-full",
-          "bg-[radial-gradient(ellipse_at_center,rgba(0,229,255,0.15),transparent_50%)]",
-          "blur-[60px]"
-        )}
+        className="-z-10 -top-1/2 -translate-x-1/2 pointer-events-none absolute left-1/2 h-[120vmin] w-[120vmin] rounded-b-full opacity-0"
       />
 
       <section className="relative mx-auto max-w-4xl px-4">
         <h2 className="mb-8 text-center font-medium text-white text-2xl tracking-tight md:text-4xl">
           <span className="text-neutral-400">Powered by cutting-edge tech.</span>
           <br />
-          <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <span className="font-semibold text-white">
             Built for the future.
           </span>
         </h2>
